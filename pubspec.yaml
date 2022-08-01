@@ -13,21 +13,12 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
+  image: ^3.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^1.0.0
-  ffigen: ^6.0.0
-  
-ffigen:
-  output: 'opencv2_generated_bindings.dart'
-  compiler-opts:
-    - '-I./include'
-  headers:
-    entry-points:
-      - 'include/opencv2/opencv.hpp'
-  name: 'NativeCV'
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
